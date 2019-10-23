@@ -1,0 +1,28 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<script>
+var data;
+fetch("https://cometari-airportsfinder-v1.p.rapidapi.com/api/airports/by-code?code=NYC%2C%20KRK", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "cometari-airportsfinder-v1.p.rapidapi.com",
+		"x-rapidapi-key": "1759ba3543msh66bafcef00a4184p15436ajsn800e6a99c56f"
+	}
+})
+.then(response=>response.json())
+.then(dat=>{console.log(dat);})
+alert(data)
+
+//response => {
+//JSON.parse(response)}).then(data => {console.log(data)});
+</script>
+
+</body>
+</html>
